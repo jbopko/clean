@@ -1,0 +1,6 @@
+{
+  "editor.tabSize": 2,
+  "javascript.format.insertSpaceAfterConstructor": true,
+  "javascript.format.insertSpaceAfterOpeningAndBeforeClosingTemplateStringBraces": true,
+  "editor.formatOnSave": true
+}

@@ -1,0 +1,132 @@
+:root {
+  --color-light: rgba(0,167,181, 1.00);
+  --color-dark: rgba(61,69,94,1.00);
+  --color-accent: rgba(195,220,147,1.00);
+
+  --color-light-alt: rgba(0,110,122,0.80);
+  --color-dark-alt: rgb(40, 45, 65);
+  --color-dark-alt-light: rgb(80, 90, 125, 1.00);
+  --color-accent-alt: rgb(125, 135, 100);
+
+  --color-white: rgba(255,255,255,1.00);
+  --color-black: rgba(0,0,0,1.00);
+  --color-gray-light: rgba(230,231,232, 1.00);
+  --color-gray-med: rgba(167,169,172,1.00);
+
+  --color-text-light: rgba(240,240,240, 0.90);
+  --color-text-dark: rgba(61,69,94,1.00);
+  --color-text-accent: rgba(195,220,147,0.85);
+
+  --color-transparent: rgba(15,0,0,0.00);
+  --color-highlight: rgba(255,255,255, 0.2);
+  --color-lowlight: rgba(15,15,15, 0.2);
+
+  --img-helpinghand: url("../assets/header.jpg");
+  --img-reaction: url("../assets/logo.svg");
+
+  --grad-light: radial-gradient( var(--color-light), var(--color-light-alt) );
+  --grad-dark: radial-gradient( var(--color-dark), var(--color-dark-alt) );
+  --grad-gray: radial-gradient( var(--color-gray-white), var(--color-gray-med) );
+
+  --grad-light-dark: linear-gradient( to top left,var(--color-dark) 0%, var(--color-dark) 8%, var(--color-light) 50%,var(--color-dark) 92%, var(--color-dark) 100% );
+  --grad-stripe-45: linear-gradient(45deg, var(--color-dark) 30%, var(--color-light) 40%, var(--color-light) 75%, var(--color-dark) 85%);
+  --grad-stripe-135: linear-gradient(135deg, var(--color-dark) 30%, var(--color-light) 40%, var(--color-light) 85%, var(--color-dark) 95%);
+  --grad-right: radial-gradient(farthest-side at 100%, var(--color-light) 50%, var(--color-dark) 90%);
+  --grad-tiedye: linear-gradient(to bottom right, var(--color-dark) 2%, var(--color-light) 50%, var(--color-dark) 90%);
+  --grad-dim: linear-gradient(to right, var(--color-lowlight), var(--color-lowlight) );
+  --grad-highlight: linear-gradient(to top left, var(--color-dark), var(--color-light), var(--color-light-alt) 50%,var(--color-light), var(--color-dark) 100%);
+  --grad-light-accent: linear-gradient( to top left,var(--color-accent) 0%, var(--color-dark) 8%, var(--color-light) 50%,var(--color-dark) 92%, var(--color-accent) 100% );
+
+  --font-size-header: xx-large;
+  --font-size-p: smaller;
+
+  --margin: 1.0rem;
+  --padding: 1.0rem;
+  --border-radius: 0.5rem;
+
+  --box-shadow-dims: 0.3rem 0.3rem 1px;
+  --box-shadow-light: var(--box-shadow-dims) var(--color-light-alt);
+  --box-shadow-dark: var(--box-shadow-dims) var(--color-dark-alt);
+  --box-shadow-accent: var(--box-shadow-dims) var(--color-accent-alt);
+  --box-shadow-dim: var(--box-shadow-dims) var(--color-lowlight);
+
+  --border-dark: 1px solid var(--color-dark);
+  --border-light: 1px solid var(--color-light);
+  --border-accent: 1px solid var(--color-accent);
+  --border-none: none;
+
+  --time-xs: 0.25s;
+  --time-s: 0.50s;
+  --time-m: 1.00s;
+  --time-l: 1.50s;
+  --time-xl: 3.00s;
+
+  --scale-xs: scale(0.75);
+  --scale-s: scale(1.05);
+  --scale-m: scale(1.15);
+  --scale-l: scale(1.25);
+
+  --filter-darken: brightness(80%);
+  --filter-brighten: brightness(120%);
+
+  --hide-left: translateX(-200px);
+  --ease: all var(--time-s) ease-in-out;
+
+  /*
+   *  App specific
+   */
+  --width-sidebar: 200px;
+
+  --box-shadow: var(--box-shadow-dim);
+  --border: var(--border-none);
+
+  --bg-card: var(--grad-light);
+  --bg-sheet: var(--grad-light);
+
+  --bg-header: var(--grad-dark);
+  --bg-footer: var(--grad-dark);
+  --bg-sidebar: var(--grad-dark);
+  --bg-content: var(--grad-gray);
+
+  /**
+   * Very cool, but not neccessary:
+   *  --bg-content-intro:  var(--grad-dim), var(--img-helpinghand);
+   *
+   **/
+  --bg-content-intro:  var(--img-helpinghand);
+}
+body {
+  font-family: "aktiv-grotesk-std",sans-serif;
+  text-rendering: optimizeLegibility;
+  font-stretch: normal;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+h1 {
+  font-stretch: semi-condensed;
+  font-size: var(--font-size-header);
+  font-weight: lighter;
+}
+h2 {
+  font-weight: bold;
+}
+h3 {
+  font-weight: normal;
+}
+h4 {
+  font-weight: bold;
+}
+p {
+  font-weight: lighter;
+  font-size: var(--font-size-p);
+}
+blockquote {
+
+}
+li:hover {
+    cursor: pointer;
+}
+code {
+    font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
+}
