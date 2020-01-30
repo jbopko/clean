@@ -9,7 +9,8 @@ import Sidebar from './Sidebar';
 import Content from './Content';
 import Footer from './Footer';
 
-const StyledDashboard = styled.div.attrs((props) => ({
+// const StyledDashboard = styled.div.attrs((props) => ({
+const StyledDashboard = styled.div.attrs(() => ({
   // we can define static props
   type: 'dashboard',
 }))`
@@ -84,7 +85,7 @@ class Dashboard extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      user: 'guest',
+      //      user: 'guest',
       headerRoutes: props.routes.header,
       sidebarRoutes: props.routes.sidebar,
       footerRoutes: props.routes.footer,
